@@ -1,5 +1,5 @@
 // import { Participant } from 'components';
-import { InputTask } from 'components';
+import { EmptyTask, InputTask, StaticsTask } from 'components';
 import { Header } from 'components/Header';
 import { useState } from 'react';
 import {
@@ -10,6 +10,7 @@ import {
   TouchableOpacity,
   Alert,
 } from 'react-native';
+import { labels } from 'utils';
 import { styles } from './styles';
 
 const PARTICIPANT_DEFAULT: string[] = [];
@@ -55,6 +56,11 @@ export const Home = () => {
       <Header />
       <View style={styles.box}>
         <InputTask />
+        <View style={styles.statics}>
+          <StaticsTask type={labels.staticsTask.maked} value={0} />
+          <StaticsTask type={labels.staticsTask.finished} value={0} />
+        </View>
+        <EmptyTask active={false} />
         {/* <FlatList
           style={styles.participantsContainer}
           contentContainerStyle={styles.participants}

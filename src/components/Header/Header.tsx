@@ -5,7 +5,7 @@ import { styles } from './styles';
 export const Header = () => {
   return (
     <View style={styles.container}>
-      <Image source={logo} />
+      <Image style={styles.logo} source={logo} />
     </View>
   );
 };

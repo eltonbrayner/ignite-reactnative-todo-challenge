@@ -1,45 +1,16 @@
 import { StyleSheet } from 'react-native';
+import theme from 'utils/theme';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0D0D0D',
+    backgroundColor: theme.colors.GRAY_700,
   },
   box: {
     // padding: 24,
     // gap: 24,
-  },
-  title: {
-    color: '#FDFCFE',
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-  subTitle: { color: '#6B6B6B', fontSize: 16 },
-  inputContainer: {
-    flexDirection: 'row',
-    gap: 12,
-  },
-  input: {
     flex: 1,
-    height: 56,
-    borderRadius: 5,
-    backgroundColor: '#1F1E25',
-    color: '#FFF',
-    fontSize: 16,
-    padding: 16,
-  },
-  button: {
-    height: 56,
-    width: 56,
-    borderRadius: 5,
-    backgroundColor: '#31CF67',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: '#FFF',
-    fontSize: 16,
-    fontWeight: 'bold',
+    backgroundColor: theme.colors.GRAY_600,
   },
   participants: {
     gap: 10,
@@ -52,5 +23,10 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     color: '#FFF',
+  },
+  statics: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginHorizontal: 24,
   },
 });
