@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
   container: {
     borderColor: theme.colors.GRAY_400,
     borderTopWidth: 1,
-    marginHorizontal: 24,
 
     gap: 16,
     paddingTop: 40,
@@ -15,6 +14,7 @@ export const styles = StyleSheet.create({
   },
   text: {
     padding: 20,
+    alignItems: 'center',
   },
   title: {
     fontSize: 14,

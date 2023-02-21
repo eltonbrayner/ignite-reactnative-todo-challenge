@@ -7,22 +7,14 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.GRAY_700,
   },
   box: {
-    // padding: 24,
-    // gap: 24,
     flex: 1,
     backgroundColor: theme.colors.GRAY_600,
   },
-  participants: {
+  taskList: {
+    paddingHorizontal: 24,
+  },
+  taskListContainer: {
     gap: 10,
-  },
-  participantsContainer: {
-    maxHeight: '73%',
-  },
-  withoutParticipants: {
-    textAlign: 'center',
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#FFF',
   },
   statics: {
     flexDirection: 'row',
