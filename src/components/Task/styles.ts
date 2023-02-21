@@ -14,8 +14,8 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.GRAY_400,
   },
   circle: {
-    width: 17,
-    height: 17,
+    width: 24,
+    height: 24,
     borderRadius: 16,
   },
   emptyCircle: {
@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     color: theme.colors.GRAY_300,
   },
   trashIcon: {
-    width: 12,
-    height: 14,
+    width: 18,
+    height: 20,
   },
 });

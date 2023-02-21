@@ -3,7 +3,14 @@ import { EmptyTask, InputTask, StaticsTask, Task } from 'components';
 import { Header } from 'components/Header';
 import { TaskProps } from 'models';
 import { useState } from 'react';
-import { Text, View, SafeAreaView, Alert, FlatList } from 'react-native';
+import {
+  Text,
+  View,
+  SafeAreaView,
+  Alert,
+  FlatList,
+  Keyboard,
+} from 'react-native';
 import { labels } from 'utils';
 import { styles } from './styles';
 
@@ -21,6 +28,8 @@ export const Home = () => {
         isFinished: false,
       },
     ]);
+
+    Keyboard.dismiss();
     return setInputValue('');
   };
 
